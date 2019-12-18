@@ -55,10 +55,11 @@ Copy my pi.html and action.php to your linux server directory /var/www/html
 
 Copy my greetings.py to your rPi in the directory /home/pi/e-Paper/Pi/python/examples
 ### Autostart
-Add this entry into /etc/rc.local
+Add this entry into /etc/rc.local on your rPi
 
 python3 /home/pi/e-Paper/Pi/python/examples/greetings.py  > /dev/null 2>&1 &
 
 reboot
 ## Test
+Point your web browser to http://[address-of-your-Linux-server]/pi.html. You should see this web form:
 
