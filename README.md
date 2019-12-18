@@ -62,4 +62,4 @@ python3 /home/pi/e-Paper/Pi/python/examples/greetings.py  > /dev/null 2>&1 &
 reboot
 ## Test
 Point your web browser to http://[address-of-your-Linux-server]/pi.html. You should see this web form:
-
+![Web Form] (https://github.com/DennisFaucher/pizero-epaper-greetings/blob/master/Screen%20Shot%202019-12-17%20at%2010.04.27%20PM.png)
