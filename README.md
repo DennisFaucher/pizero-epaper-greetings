@@ -54,4 +54,11 @@ sudo usermod -a -G www-data [your_linux_username]
 Copy my pi.html and action.php to your linux server directory /var/www/html
 
 Copy my greetings.py to your rPi in the directory /home/pi/e-Paper/Pi/python/examples
+### Autostart
+Add this entry into /etc/rc.local
+
+python3 /home/pi/e-Paper/Pi/python/examples/greetings.py  > /dev/null 2>&1 &
+
+reboot
+## Test
 
