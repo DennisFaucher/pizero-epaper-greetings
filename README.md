@@ -26,7 +26,7 @@ Connect your Raspberry Pi Zero (rPi) to keyboard, mouse, HDMI monitor and power 
 
 Install the Waveshare e-Paper drivers using these instructions: https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT. Rename the awfully named directory "RaspberryPi&JetsonNano" to just "Pi".
 
-Install the lighttpd server and PHP somewhere. You can use a local Linux host or a cloud Linux VM. Steps are:
+### Install the lighttpd server and PHP somewhere. You can use a local Linux host or a cloud Linux VM. Steps are:
 
 sudo apt install lighttpd
 
@@ -51,6 +51,5 @@ sudo chmod 775 /var/www
 sudo usermod -a -G www-data [your_linux_username]
 
 
-Copy my greetings.py to your rPi in the directory /home/pi/e-Paper/Pi/python/examples
+### Copy my greetings.py to your rPi in the directory /home/pi/e-Paper/Pi/python/examples
 
-Edit 
