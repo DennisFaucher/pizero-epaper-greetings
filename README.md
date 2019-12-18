@@ -51,5 +51,8 @@ sudo chmod 775 /var/www
 sudo usermod -a -G www-data [your_linux_username]
 
 
-### Copy my greetings.py to your rPi in the directory /home/pi/e-Paper/Pi/python/examples
+
+Copy my pi.html and action.php to your linux server directory /var/www/html
+
+Copy my greetings.py to your rPi in the directory /home/pi/e-Paper/Pi/python/examples
 
