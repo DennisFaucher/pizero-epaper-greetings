@@ -22,7 +22,24 @@ Waveshare 2.13" e-Paper Dsiplay HAT. I purchased mine here: https://www.aliexpre
  ## Software
  Install Raspbian OS from here https://www.raspberrypi.org/downloads/raspbian/ and use these instructions: https://www.raspberrypi.org/documentation/installation/installing-images/README.md
 
-Connect your Raspberry Pi Zero to keyboard, mouse, HDMI monitor and power to run through the usual Linux setup. I picked up all the necessary cable/power accesories here: https://www.sparkfun.com/products/14298
+Connect your Raspberry Pi Zero (rPi) to keyboard, mouse, HDMI monitor and power to run through the usual Linux setup. I picked up all the necessary cable/power accesories here: https://www.sparkfun.com/products/14298
 
 Install the Waveshare e-Paper drivers using these instructions: https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT. Rename the awfully named directory "RaspberryPi&JetsonNano" to just "Pi".
 
+Install the lighttpd server and PHP somewhere. You can use a local Linux host or a cloud Linux VM. Steps are:
+sudo apt install lighttpd
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
+sudo apt-get install -y php5.6
+sudo apt-get install php5-mysql
+sudo apt install -y php5.6-cgi
+sudo lighty-enable-mod fastcgi-php
+sudo service lighttpd force-reload
+sudo chown www-data:www-data /var/www
+sudo chmod 775 /var/www
+sudo usermod -a -G www-data [your_linux_username]
+
+
+Copy my greetings.py to your rPi in the directory /home/pi/e-Paper/Pi/python/examples
+
+Edit 
