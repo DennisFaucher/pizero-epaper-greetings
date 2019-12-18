@@ -1,5 +1,6 @@
 # pizero-epaper-greetings
 ## Automatically change the greeting displayed on the Raspberry Pi e-Paper display based on web input
+![Sample Image](https://github.com/DennisFaucher/pizero-epaper-greetings/blob/master/IMG_20191217_213739.jpg)
 
 This is a follow-on idea to my ugly Christmas sweater accessory https://github.com/DennisFaucher/pizero-epaper-movie. The rotating movie stills are cute, but i wanted to make an interactive piece of wearable art. The major issue was "How to gather input?" I failed in many ways before landing on something that worked. 
 
